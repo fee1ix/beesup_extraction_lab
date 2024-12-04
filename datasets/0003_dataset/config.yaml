@@ -1,0 +1,11 @@
+type: dataset
+id: 3
+name: 0003_dataset
+path: /home/fboehning/fboehning/extraction_lab/datasets/0003_dataset
+parent_dir_path: /home/fboehning/fboehning/extraction_lab/datasets
+parent_lab_path: /home/fboehning/fboehning/extraction_lab
+datetime_init: 2024-11-25 15:23:15.175504+01:00
+remarks: 100 real samples + 100 synthetic samples
+dir_name: datasets
+lab_name: extraction_lab
+rel_path: extraction_lab/datasets/0003_dataset

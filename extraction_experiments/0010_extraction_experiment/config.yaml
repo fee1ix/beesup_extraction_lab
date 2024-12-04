@@ -1,0 +1,128 @@
+type: extraction_experiment
+id: 10
+name: 0010_extraction_experiment
+path: /home/fboehning/fboehning/extraction_lab/extraction_experiments/0010_extraction_experiment
+parent_dir_path: /home/fboehning/fboehning/extraction_lab/extraction_experiments
+parent_lab_path: /home/fboehning/fboehning/extraction_lab
+seed: 1
+timestamp_init: 2024-11-27_16-14-52
+done: true
+do_eval_base_model: true
+model_config:
+  type: gen_model
+  id: 1
+  name: 0001_gen_model
+  path: /home/fboehning/fboehning/extraction_lab/gen_models/0001_gen_model
+  parent_dir_path: /home/fboehning/fboehning/extraction_lab/gen_models
+  parent_lab_path: /home/fboehning/fboehning/extraction_lab
+  name_or_path: meta-llama/Meta-Llama-3.1-8B-Instruct
+  base_model: Meta-Llama-3.1-8B-Instruct
+  datetime_init: 2024-11-25 15:24:33.463946+01:00
+  bnb_config:
+    load_in_4bit: true
+    bnb_4bit_use_double_quant: true
+    bnb_4bit_quant_type: nf4
+  inference_tokenizer_config:
+    padding_side: left
+    padding: longest
+    add_special_tokens: true
+    max_length: 8192
+    pad_token: <|begin_of_text|>
+    pad_token_id: 128000
+  training_tokenizer_config:
+    padding_side: right
+    padding: longest
+    add_special_tokens: true
+    max_length: 8192
+    pad_token: <|end_of_text|>
+    pad_token_id: 128001
+  generation_config:
+    return_dict_in_generate: false
+    max_new_tokens: 750
+    max_time: 600
+    stop_strings: null
+    pad_token: <|begin_of_text|>
+    pad_token_id: 128000
+    do_sample: false
+  data_collator_config:
+    label_pad_token_id: -100
+  dataloader_config:
+    batch_size: 8
+  dir_name: gen_models
+  lab_name: extraction_lab
+  rel_path: extraction_lab/gen_models/0001_gen_model
+dataset_config:
+  type: dataset
+  id: 3
+  name: 0003_dataset
+  path: /home/fboehning/fboehning/extraction_lab/datasets/0003_dataset
+  parent_dir_path: /home/fboehning/fboehning/extraction_lab/datasets
+  parent_lab_path: /home/fboehning/fboehning/extraction_lab
+  datetime_init: 2024-11-25 15:23:15.175504+01:00
+  remarks: 100 real samples + 100 synthetic samples
+  dir_name: datasets
+  lab_name: extraction_lab
+  rel_path: extraction_lab/datasets/0003_dataset
+trainer_config:
+  type: lora_trainer
+  id: 1
+  name: 0001_lora_trainer
+  path: /home/fboehning/fboehning/extraction_lab/lora_trainers/0001_lora_trainer
+  parent_dir_path: /home/fboehning/fboehning/extraction_lab/lora_trainers
+  parent_lab_path: /home/fboehning/fboehning/extraction_lab
+  trainer_args:
+    seed: 1
+    auto_find_batch_size: true
+    gradient_accumulation_steps: 1
+    gradient_checkpointing_kwargs:
+      use_reentrant: false
+    warmup_steps: 0
+    num_train_epochs: 10
+    learning_rate: 0.0002
+    output_dir: /home/fboehning/fboehning/extraction_lab/extraction_experiments/0010_extraction_experiment
+    optim: paged_adamw_8bit
+    per_device_eval_batch_size: 16
+    save_strategy: 'no'
+    logging_strategy: steps
+    logging_steps: 1
+    logging_first_step: true
+    do_train: true
+    do_eval: false
+    eval_strategy: 'no'
+    prediction_loss_only: false
+  data_collator_config:
+    padding: longest
+    label_pad_token_id: -100
+  lora_config:
+    r: 32
+    lora_alpha: 3
+    use_rslora: true
+    target_modules: all-linear
+    lora_dropout: 0.05
+    bias: none
+    task_type: CAUSAL_L
+  sft_trainer_args:
+    max_seq_length: 4096
+    packing: false
+  datetime_init: 2024-11-25 15:28:05.643551+01:00
+  dir_name: lora_trainers
+  lab_name: extraction_lab
+  rel_path: extraction_lab/lora_trainers/0001_lora_trainer
+pipeline_config:
+  type: extraction_pipeline
+  id: 2
+  name: 0002_extraction_pipeline
+  path: /home/fboehning/fboehning/extraction_lab/extraction_pipelines/0002_extraction_pipeline
+  parent_dir_path: /home/fboehning/fboehning/extraction_lab/extraction_pipelines
+  parent_lab_path: /home/fboehning/fboehning/extraction_lab
+  use_extraction_prompt: true
+  use_few_shots: false
+  datetime_init: 2024-11-25 15:30:13.477266+01:00
+  dir_name: extraction_pipelines
+  lab_name: extraction_lab
+  rel_path: extraction_lab/extraction_pipelines/0002_extraction_pipeline
+timestamp_run: 2024-11-28_19-18-51
+timestamp_done: 2024-11-28_21-21-40
+dir_name: extraction_experiments
+lab_name: extraction_lab
+rel_path: extraction_lab/extraction_experiments/0010_extraction_experiment
