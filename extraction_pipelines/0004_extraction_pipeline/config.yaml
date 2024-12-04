@@ -1,0 +1,12 @@
+type: extraction_pipeline
+id: 4
+name: 0004_extraction_pipeline
+path: /home/fboehning/fboehning/extraction_lab/extraction_pipelines/0004_extraction_pipeline
+parent_dir_path: /home/fboehning/fboehning/extraction_lab/extraction_pipelines
+parent_lab_path: /home/fboehning/fboehning/extraction_lab
+use_extraction_prompt: false
+use_few_shots: false
+datetime_init: 2024-11-25 15:30:26.451094+01:00
+dir_name: extraction_pipelines
+lab_name: extraction_lab
+rel_path: extraction_lab/extraction_pipelines/0004_extraction_pipeline
