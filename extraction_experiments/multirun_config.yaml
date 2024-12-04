@@ -1,0 +1,9 @@
+framework_dirs:
+- /home/fboehning/fboehning
+module_path: /home/fboehning/fboehning/beesup_llm/experiment/extraction_experiment.py
+script_path: /home/fboehning/fboehning/beesup_llm/experiment/multirun_script.py
+experiment_dirs:
+- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0009_extraction_experiment
+- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0010_extraction_experiment
+- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0011_extraction_experiment
+- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0012_extraction_experiment

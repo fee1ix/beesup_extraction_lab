@@ -1,0 +1,11 @@
+type: dataset
+id: 1
+name: 0001_dataset
+path: /home/fboehning/fboehning/extraction_lab/datasets/0001_dataset
+parent_dir_path: /home/fboehning/fboehning/extraction_lab/datasets
+parent_lab_path: /home/fboehning/fboehning/extraction_lab
+datetime_init: 2024-11-21 09:25:21.162346+01:00
+remarks: 100 real samples
+dir_name: datasets
+lab_name: extraction_lab
+rel_path: extraction_lab/datasets/0001_dataset
