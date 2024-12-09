@@ -4,7 +4,7 @@ name: 0013_extraction_experiment
 dir_name: extraction_experiments
 lab_name: extraction_lab
 rel_path: extraction_lab/extraction_experiments/0013_extraction_experiment
-done: false
+done: true
 seed: 55
 do_eval_base_model: true
 do_train: true
@@ -146,3 +146,5 @@ extractor_config:
     base_model: Mistral-7B-Instruct-v0.2
     timestamp_init: 2024-12-06_17-25-00
   timestamp_init: 2024-12-06_17-26-12
+timestamp_run: 2024-12-06_17-56-36
+timestamp_done: 2024-12-06_20-11-50
