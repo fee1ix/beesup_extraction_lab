@@ -1,0 +1,149 @@
+type: extraction_experiment
+id: 25
+name: 0025_extraction_experiment
+dir_name: extraction_experiments
+lab_name: extraction_lab
+rel_path: extraction_lab/extraction_experiments/0025_extraction_experiment
+done: false
+seed: 55
+do_eval_base_model: true
+do_train: true
+llm_config:
+  type: llm_pipeline
+  id: 1
+  name: 0001_llm_pipeline
+  dir_name: llm_pipelines
+  lab_name: extraction_lab
+  rel_path: extraction_lab/llm_pipelines/0001_llm_pipeline
+  name_or_path: mistralai/Mistral-7B-Instruct-v0.2
+  pipeline_args:
+    return_full_text: false
+    clean_up_tokenization_spaces: true
+  bnb_config:
+    load_in_4bit: true
+    bnb_4bit_use_double_quant: true
+    bnb_4bit_quant_type: nf4
+  inference_tokenizer_config:
+    padding_side: left
+    padding: longest
+    add_special_tokens: true
+    max_length: 8192
+    pad_token: <unk>
+  training_tokenizer_config:
+    padding_side: right
+    padding: longest
+    add_special_tokens: true
+    max_length: 8192
+    pad_token: <unk>
+  generation_config:
+    return_dict_in_generate: false
+    max_new_tokens: 4096
+    max_time: 1200
+    pad_token: <unk>
+  base_model: Mistral-7B-Instruct-v0.2
+  timestamp_init: 2024-12-06_17-25-00
+trainer_config:
+  type: trainer
+  id: 2
+  name: 0002_lora_trainer
+  dir_name: lora_trainers
+  lab_name: extraction_lab
+  rel_path: extraction_lab/lora_trainers/0002_lora_trainer
+  trainer_args:
+    auto_find_batch_size: true
+    per_device_train_batch_size: 4
+    gradient_accumulation_steps: 1
+    gradient_checkpointing_kwargs:
+      use_reentrant: false
+    warmup_steps: 0
+    num_train_epochs: 10
+    learning_rate: 0.0002
+    output_dir: /home/fboehning/fboehning/extraction_lab/extraction_experiments/0025_extraction_experiment
+    optim: paged_adamw_8bit
+    per_device_eval_batch_size: 16
+    save_strategy: 'no'
+    logging_strategy: steps
+    logging_steps: 1
+    logging_first_step: true
+    do_train: true
+    do_eval: false
+    eval_strategy: 'no'
+    prediction_loss_only: false
+    seed: 55
+  data_collator_config:
+    padding: longest
+    label_pad_token_id: -100
+  lora_config:
+    r: 32
+    lora_alpha: 3
+    use_rslora: true
+    target_modules: all-linear
+    lora_dropout: 0.05
+    bias: none
+    task_type: CAUSAL_L
+  sft_trainer_args:
+    max_seq_length: 4096
+    packing: false
+  timestamp_init: 2024-12-06_17-25-19
+timestamp_init: 2024-12-10_16-21-49
+dataset_config:
+  type: dataset
+  id: 2
+  name: 0002_dataset
+  dir_name: datasets
+  lab_name: extraction_lab
+  rel_path: extraction_lab/datasets/0002_dataset
+  remarks: 100 synthetic samples
+  path: /home/fboehning/fboehning/extraction_lab/datasets/0002_dataset
+  parent_dir_path: /home/fboehning/fboehning/extraction_lab/datasets
+  parent_lab_path: /home/fboehning/fboehning/extraction_lab
+extractor_config:
+  type: extraction_pipeline
+  id: 3
+  name: 0003_extraction_pipeline
+  dir_name: extraction_pipelines
+  lab_name: extraction_lab
+  rel_path: extraction_lab/extraction_pipelines/0003_extraction_pipeline
+  use_extraction_prompt: false
+  use_few_shots: true
+  llm_config:
+    type: extraction_pipeline
+    id: 1
+    name: 0001_llm_pipeline
+    dir_name: llm_pipelines
+    lab_name: extraction_lab
+    rel_path: extraction_lab/llm_pipelines/0001_llm_pipeline
+    name_or_path: mistralai/Mistral-7B-Instruct-v0.2
+    pipeline_args:
+      return_full_text: false
+      clean_up_tokenization_spaces: true
+    bnb_config:
+      load_in_4bit: true
+      bnb_4bit_use_double_quant: true
+      bnb_4bit_quant_type: nf4
+    inference_tokenizer_config:
+      padding_side: left
+      padding: longest
+      add_special_tokens: true
+      max_length: 8192
+      pad_token: <unk>
+    training_tokenizer_config:
+      padding_side: right
+      padding: longest
+      add_special_tokens: true
+      max_length: 8192
+      pad_token: <unk>
+    generation_config:
+      return_dict_in_generate: false
+      max_new_tokens: 4096
+      max_time: 1200
+      pad_token: <unk>
+      stop_strings:
+      - '}
+
+        ```'
+    base_model: Mistral-7B-Instruct-v0.2
+    timestamp_init: 2024-12-06_17-25-00
+  path: /home/fboehning/fboehning/extraction_lab/extraction_pipelines/0003_extraction_pipeline
+  parent_dir_path: /home/fboehning/fboehning/extraction_lab/extraction_pipelines
+  parent_lab_path: /home/fboehning/fboehning/extraction_lab

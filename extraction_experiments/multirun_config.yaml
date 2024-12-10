@@ -3,11 +3,6 @@ framework_dirs:
 module_path: /home/fboehning/fboehning/beesup_llm/experiment/extraction_experiment.py
 script_path: /home/fboehning/fboehning/beesup_llm/experiment/multirun_script.py
 experiment_dirs:
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0013_extraction_experiment
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0014_extraction_experiment
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0015_extraction_experiment
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0016_extraction_experiment
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0017_extraction_experiment
 - /home/fboehning/fboehning/extraction_lab/extraction_experiments/0018_extraction_experiment
 - /home/fboehning/fboehning/extraction_lab/extraction_experiments/0019_extraction_experiment
 - /home/fboehning/fboehning/extraction_lab/extraction_experiments/0020_extraction_experiment
@@ -27,3 +22,8 @@ experiment_dirs:
 - /home/fboehning/fboehning/extraction_lab/extraction_experiments/0034_extraction_experiment
 - /home/fboehning/fboehning/extraction_lab/extraction_experiments/0035_extraction_experiment
 - /home/fboehning/fboehning/extraction_lab/extraction_experiments/0036_extraction_experiment
+- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0037_extraction_experiment
+- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0038_extraction_experiment
+- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0039_extraction_experiment
+- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0040_extraction_experiment
+- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0041_extraction_experiment
