@@ -8,7 +8,7 @@ seed: 1
 timestamp_init: 2024-11-27_16-14-52
 done: true
 do_eval_base_model: true
-model_config:
+model_config: &id001
   type: gen_model
   id: 1
   name: 0001_gen_model
@@ -108,7 +108,7 @@ trainer_config:
   dir_name: lora_trainers
   lab_name: extraction_lab
   rel_path: extraction_lab/lora_trainers/0001_lora_trainer
-pipeline_config:
+pipeline_config: &id002
   type: extraction_pipeline
   id: 1
   name: 0001_extraction_pipeline
@@ -126,3 +126,5 @@ timestamp_done: 2024-11-27_19-16-28
 dir_name: extraction_experiments
 lab_name: extraction_lab
 rel_path: extraction_lab/extraction_experiments/0001_extraction_experiment
+llm_config: *id001
+extractor_config: *id002

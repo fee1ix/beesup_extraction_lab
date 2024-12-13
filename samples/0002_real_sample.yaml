@@ -1,0 +1,59 @@
+report_passage: "Im Rahmen von biologischen Gutachten konnten 2012 \neinige bemerkenswerte\
+  \ Nachweise von Bienen (Hyme-\nnoptera  Apidae)  für  Niedersachsen  erbracht  werden.\
+  \ \nEin Teil  der  Daten  stammt  aus  einem  Gutachten,  das \nden  Nutzen  von\
+  \  Blühstreifen  für  Stechimmen  in  Nie-\ndersachsen  zum  Thema  hatte.  Die\
+  \  Gesamtergebnisse \nwerden  an  anderer  Stelle  veröffentlicht.  Hier  sollen\
+  \ \nvorab nur die faunistischen Besonderheiten publiziert \nwerden.  Derartige \
+  \ Einzelfunde  auf  Blühstreifen  sagen \nnur sehr bedingt etwas über deren qualitative\
+  \ Bedeu-\ntung  für  Wildbienen  aus.  Dazu  müssen  die  gesamte \nStechimmenfauna\
+  \  und  vor  allem  die  umgebenden \nNistbiotope betrachtet werden.\nDie anderen\
+  \ Ergebnisse stammen von einer ganztägi-\ngen Begehung einer Industriebrache in\
+  \ Helmstedt am \n30.6.2012.\n\nHylaeus styriacus Förster, 1871\n3  ♂,  30.6.12,\
+  \  Helmstedt,  Industriebrache  (TK  3731/4), \n52°14’32’’N/ 10°59’37’’E;  1  ♀,\
+  \  5.8.13  Hannover,  Leine \nSteilufer (TK 3624/1) 52°23’60’’N/ 9°38’55’’E\n\n\
+  Zweit- und Drittnachweis für Niedersachsen. Der aktu-\nelle Nachweis aus einer noch\
+  \ laufenden Untersuchung \nin Hannover wird hier ergänzend angeführt. Theunert \n\
+  (2003)  führt  einen  nicht  näher  erläuterten  Fund  aus \ndem Raum Hildesheim\
+  \ als Erstnachweis für Niedersach-\nsen auf und bezeichnet diesen als möglichen\
+  \ Nordrand \ndes Verbreitungsareals. Die oben genannten Fundorte \nweisen auf eine\
+  \ anhaltende Ausbreitung nach Norden \nhin. Die Art hat in den letzten Jahren ihr\
+  \ Areal deutlich \nausgeweitet.  Im  äußersten  Südosten  der  Niederlande \ntritt\
+  \ H. styriacus seit 1998 regelmäßig auf (Peeters et al. \n2012). Aus Westfalen ist\
+  \ die Art erst seit 2006 bekannt \n(Bleidorn et al. 2008).\nLasioglossum aeratum\
+  \ (Kirby, 1802) \n1 ♀, 30.5.2012, Helmstedt, Industriebrache (TK 3731/4), \n52°14’32’’N/\
+  \ 10°59’37’’E (vid. M. Herrmann)\n\nDas Tier  wurde  auf  derselben  Fläche  wie\
+  \  Halictus sex-\ncinctus  nachgewiesen  (s.  o.).  Der  Fund  ist  das  aktuell\
+  \ \nnordwestlichstes Vorkommen  der  Art  in  Deutschland. \nDer einzige Nachweis\
+  \ aus Niedersachsen ist ein unpu-\nblizierter  Fund  vom  14.4.1900  vom  Badener\
+  \  Berg  bei \nAchim (Theunert, schriftliche Mitteilung). Das ♀ befin-\ndet  in\
+  \  der  Sammlung  des  Landesmuseum  Hannover. \nAuf diesen unpublizierten Fund\
+  \ bezieht sich auch der \n\nnicht näher erläuterte Rote-Liste Status in Niedersach-\n\
+  sen  (Theunert  2002).  Aus  Schleswig-Holstein  liegen \nnur  zwei  alte  Literaturangaben\
+  \  von  1913  und  1918 \naus  Eutin  vor  (zitiert  aus  van  der  Smissen,  2001).\
+  \  Aus \nNord rhein-Westfalen  stammt  der  letzte  und  einzige \nNachweis von\
+  \ vor 1959 (Esser et al., 2010). In Sachsen-\nAnhalt (Burger et al. 2004) und in\
+  \ Berlin/Brandenburg \nkommt L. aeratum schon etwas häufiger vor (Dathe & \nSaure\
+  \ 2000).\nRote  Liste  Niedersachsen:  Kategorie  0  -  verschollen \n(Theunert\
+  \ 2002)"
+done: false
+meta_attributes:
+  meta_location: Deutschland, Niedersachsen
+  meta_leg: R. Witt
+  meta_collecting_method: hand catch
+observations:
+- scientific_name: Hylaeus styriacus (Förster, 1871)
+  date: 30.06.2012
+  location: Helmstedt, industrial wasteland, TK 3731/4, [52°14’32’’N, 10°59’37’’E]
+  n_males: '3'
+  det: R. Witt
+- scientific_name: Hylaeus styriacus (Förster, 1871)
+  date: 15.08.2013
+  location: Region Hannover, Hannover, Leinesteilufer, TK 3624/1, [52°14’32’’N, 10°59’37’’E]
+  n_females: '1'
+  det: R. Witt
+  habitat: steep river bank
+- scientific_name: Lasioglossum aeratum (Kirby, 1802)
+  date: 30.05.2012
+  location: Helmstedt, industrial wasteland, TK 3731/4, [52°14’32’’N, 10°59’37’’E]
+  n_females: '1'
+  det: Dr. Mike Herrmann

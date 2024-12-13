@@ -4,7 +4,7 @@ name: 0021_extraction_experiment
 dir_name: extraction_experiments
 lab_name: extraction_lab
 rel_path: extraction_lab/extraction_experiments/0021_extraction_experiment
-done: false
+done: true
 seed: 55
 do_eval_base_model: true
 do_train: true
@@ -40,6 +40,7 @@ llm_config:
     max_new_tokens: 4096
     max_time: 1200
     pad_token: <unk>
+    stop_strings: null
   base_model: Mistral-7B-Instruct-v0.2
   timestamp_init: 2024-12-06_17-25-00
 trainer_config:
@@ -94,6 +95,8 @@ dataset_config:
   lab_name: extraction_lab
   rel_path: extraction_lab/datasets/0001_dataset
   remarks: 100 real samples
+  emb_model_config: null
+  parent_config: null
   path: /home/fboehning/fboehning/extraction_lab/datasets/0001_dataset
   parent_dir_path: /home/fboehning/fboehning/extraction_lab/datasets
   parent_lab_path: /home/fboehning/fboehning/extraction_lab
@@ -147,3 +150,10 @@ extractor_config:
   path: /home/fboehning/fboehning/extraction_lab/extraction_pipelines/0002_extraction_pipeline
   parent_dir_path: /home/fboehning/fboehning/extraction_lab/extraction_pipelines
   parent_lab_path: /home/fboehning/fboehning/extraction_lab
+timestamp_run: 2024-12-11_07-53-21
+lora_info:
+  n_trainable_params: 83886080
+  n_total_params: 7325618176
+  p_trainable_params: 0.011451058188485089
+  lora_scale: 0.5303300858899106
+timestamp_done: 2024-12-11_10-29-13
