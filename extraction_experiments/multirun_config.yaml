@@ -3,25 +3,6 @@ framework_dirs:
 module_path: /home/fboehning/fboehning/beesup_llm/experiment/extraction_experiment.py
 script_path: /home/fboehning/fboehning/beesup_llm/experiment/multirun_script.py
 experiment_dirs:
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0018_extraction_experiment
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0019_extraction_experiment
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0020_extraction_experiment
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0021_extraction_experiment
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0022_extraction_experiment
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0023_extraction_experiment
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0024_extraction_experiment
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0025_extraction_experiment
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0026_extraction_experiment
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0027_extraction_experiment
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0028_extraction_experiment
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0029_extraction_experiment
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0030_extraction_experiment
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0031_extraction_experiment
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0032_extraction_experiment
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0033_extraction_experiment
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0034_extraction_experiment
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0035_extraction_experiment
-- /home/fboehning/fboehning/extraction_lab/extraction_experiments/0036_extraction_experiment
 - /home/fboehning/fboehning/extraction_lab/extraction_experiments/0037_extraction_experiment
 - /home/fboehning/fboehning/extraction_lab/extraction_experiments/0038_extraction_experiment
 - /home/fboehning/fboehning/extraction_lab/extraction_experiments/0039_extraction_experiment

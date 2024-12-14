@@ -1,4 +1,4 @@
-output_dir: /home/fboehning/fboehning/extraction_lab/extraction_experiments/0037_extraction_experiment
+output_dir: /home/fboehning/fboehning/extraction_lab/extraction_experiments/0039_extraction_experiment
 overwrite_output_dir: false
 do_train: true
 do_eval: false
@@ -28,7 +28,7 @@ warmup_steps: 0
 log_level: passive
 log_level_replica: warning
 log_on_each_node: true
-logging_dir: /home/fboehning/fboehning/extraction_lab/extraction_experiments/0037_extraction_experiment/runs/Dec13_15-26-34_fbo-beesup-work
+logging_dir: /home/fboehning/fboehning/extraction_lab/extraction_experiments/0039_extraction_experiment/runs/Dec13_22-06-10_fbo-beesup-work
 logging_strategy: steps
 logging_first_step: true
 logging_steps: 1
@@ -64,7 +64,7 @@ eval_steps: null
 dataloader_num_workers: 0
 dataloader_prefetch_factor: null
 past_index: -1
-run_name: /home/fboehning/fboehning/extraction_lab/extraction_experiments/0037_extraction_experiment
+run_name: /home/fboehning/fboehning/extraction_lab/extraction_experiments/0039_extraction_experiment
 disable_tqdm: false
 remove_unused_columns: true
 label_names: null
