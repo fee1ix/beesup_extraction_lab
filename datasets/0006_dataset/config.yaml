@@ -1,0 +1,10 @@
+type: dataset
+id: 6
+name: 0006_dataset
+dir_name: datasets
+lab_name: extraction_lab
+rel_path: extraction_lab/datasets/0006_dataset
+remarks: 100 synthetic samples, cleaned double whitespaces, train/test split 70/30
+emb_model_config: null
+parent_config: null
+timestamp_init: 2025-01-03_12-30-12

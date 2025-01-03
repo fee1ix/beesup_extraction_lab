@@ -1,4 +1,5 @@
 *.pkl
+*.xlsx
 *.db
 *.log
 events.out.tfevents*
