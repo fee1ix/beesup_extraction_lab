@@ -1,13 +1,13 @@
 type: extraction_experiment
-id: 49
-name: 0049_extraction_experiment
+id: 56
+name: 0056_extraction_experiment
 dir_name: extraction_experiments
 lab_name: extraction_lab
-rel_path: extraction_lab/extraction_experiments/0049_extraction_experiment
+rel_path: extraction_lab/extraction_experiments/0056_extraction_experiment
 done: true
 seed: 55
 do_eval_base_model: true
-do_train: false
+do_train: true
 llm_config:
   type: llm_pipeline
   id: 4
@@ -59,7 +59,7 @@ trainer_config:
     warmup_steps: 0
     num_train_epochs: 10
     learning_rate: 0.0002
-    output_dir: /home/fboehning/fboehning/extraction_lab/extraction_experiments/0049_extraction_experiment
+    output_dir: /home/fboehning/fboehning/extraction_lab/extraction_experiments/0056_extraction_experiment
     optim: paged_adamw_8bit
     per_device_eval_batch_size: 4
     save_strategy: 'no'
@@ -87,28 +87,27 @@ trainer_config:
     max_seq_length: 4096
     packing: false
   timestamp_init: 2024-12-06_17-25-19
-timestamp_init: 2025-01-03_15-49-50
+timestamp_init: 2025-01-07_13-04-56
 dataset_config:
   type: dataset
-  id: 7
-  name: 0007_dataset
+  id: 5
+  name: 0005_dataset
   dir_name: datasets
   lab_name: extraction_lab
-  rel_path: extraction_lab/datasets/0007_dataset
-  remarks: 100 synthetic + 100 real samples, cleaned double whitespaces, train/test
-    split 70/30
+  rel_path: extraction_lab/datasets/0005_dataset
+  remarks: 100 real samples, cleaned double whitespaces, train/test split 70/30
   emb_model_config: null
   parent_config: null
-  timestamp_init: 2025-01-03_12-34-24
+  timestamp_init: 2025-01-03_10-19-41
 extractor_config:
   type: extraction_pipeline
-  id: 4
-  name: 0004_extraction_pipeline
+  id: 3
+  name: 0003_extraction_pipeline
   dir_name: extraction_pipelines
   lab_name: extraction_lab
-  rel_path: extraction_lab/extraction_pipelines/0004_extraction_pipeline
+  rel_path: extraction_lab/extraction_pipelines/0003_extraction_pipeline
   use_extraction_prompt: false
-  use_few_shots: false
+  use_few_shots: true
   llm_config:
     type: extraction_pipeline
     id: 4
@@ -147,13 +146,13 @@ extractor_config:
       pad_token: <s>
     base_model: Phi-3-medium-128k-instruct
     timestamp_init: 2025-01-03_13-43-30
-  path: /home/fboehning/fboehning/extraction_lab/extraction_pipelines/0004_extraction_pipeline
+  path: /home/fboehning/fboehning/extraction_lab/extraction_pipelines/0003_extraction_pipeline
   parent_dir_path: /home/fboehning/fboehning/extraction_lab/extraction_pipelines
   parent_lab_path: /home/fboehning/fboehning/extraction_lab
-timestamp_run: 2025-01-06_18-43-17
+timestamp_run: 2025-01-07_13-30-51
 lora_info:
   n_trainable_params: 111411200
   n_total_params: 14071649280
   p_trainable_params: 0.00791742302434644
   lora_scale: 0.5303300858899106
-timestamp_done: 2025-01-06_19-01-26
+timestamp_done: 2025-01-08_03-04-40

@@ -4,7 +4,7 @@ name: 0051_extraction_experiment
 dir_name: extraction_experiments
 lab_name: extraction_lab
 rel_path: extraction_lab/extraction_experiments/0051_extraction_experiment
-done: false
+done: true
 seed: 55
 do_eval_base_model: true
 do_train: true
@@ -149,3 +149,10 @@ extractor_config:
   path: /home/fboehning/fboehning/extraction_lab/extraction_pipelines/0004_extraction_pipeline
   parent_dir_path: /home/fboehning/fboehning/extraction_lab/extraction_pipelines
   parent_lab_path: /home/fboehning/fboehning/extraction_lab
+timestamp_run: 2025-01-06_19-01-36
+lora_info:
+  n_trainable_params: 114032640
+  n_total_params: 12361815040
+  p_trainable_params: 0.009224587136356313
+  lora_scale: 0.5303300858899106
+timestamp_done: 2025-01-07_06-18-52
