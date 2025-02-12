@@ -2,4 +2,6 @@
 *.xlsx
 *.db
 *.log
+*.png
+*.tiff
 events.out.tfevents*
