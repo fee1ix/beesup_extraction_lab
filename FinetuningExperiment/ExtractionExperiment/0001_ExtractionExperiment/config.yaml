@@ -1,0 +1,90 @@
+id: 1
+label: ExtractionExperiment
+lab_name: extraction_lab
+class_parts:
+- FinetuningExperiment
+- ExtractionExperiment
+module_path: beesup_llm.extraction.extraction_experiment
+done: false
+do_eval_base_model: true
+do_eval_lora_model: true
+do_train: true
+lora_config:
+  r: 32
+  lora_alpha: 3
+  use_rslora: true
+  target_modules: all-linear
+  lora_dropout: 0.05
+  bias: none
+  task_type: CAUSAL_L
+sft_config:
+  num_train_epochs: 2
+  output_dir: /home/fboehning/fboehning/extraction_lab/FinetuningExperiment/ExtractionExperiment/0001_ExtractionExperiment
+  auto_find_batch_size: true
+  per_device_train_batch_size: 8
+  gradient_accumulation_steps: 1
+  learning_rate: 0.0002
+  optim: paged_adamw_8bit
+  save_strategy: epoch
+  save_total_limit: 2
+  eval_strategy: 'no'
+  logging_strategy: steps
+  logging_steps: 1
+  logging_first_step: true
+  do_train: true
+  do_eval: false
+  report_to: none
+  max_seq_length: 4096
+  packing: false
+  seed: 42
+timestamp_start: 2025-03-14_15-26-53
+lora_info:
+  n_trainable_params: 83886080
+  n_total_params: 8114147328
+  p_trainable_params: 0.010338249554642546
+  lora_scale: 0.5303300858899106
+data_df:
+  class_parts:
+  - Datahandle
+  module_path: labtools.datahandle
+  id: 1
+  label: beede_llm_dataset
+  lab_name: extraction_lab
+llm_pipe:
+  class_parts:
+  - LLMPipeline
+  - LlamaPipeline
+  module_path: beesup_llm.llm
+  label: LlamaPipeline
+  lab_name: extraction_lab
+  name_or_path: meta-llama/Meta-Llama-3.1-8B-Instruct
+  generation_config:
+    return_dict_in_generate: false
+    max_time: 1200
+    do_sample: false
+    max_new_tokens: 4096
+    pad_token: <|begin_of_text|>
+    pad_token_id: 128000
+  inference_tokenizer_config:
+    padding: longest
+    padding_side: left
+    max_length: 8192
+    pad_token: <|begin_of_text|>
+    pad_token_id: 128000
+  training_tokenizer_config:
+    padding: longest
+    padding_side: right
+    max_length: 8192
+    pad_token: <|end_of_text|>
+    pad_token_id: 128001
+  pipeline_args:
+    return_full_text: false
+    clean_up_tokenization_spaces: true
+extraction_pipe:
+  class_parts:
+  - ExtractionPipeline
+  module_path: beesup_llm.extraction.extraction_pipeline
+  label: ExtractionPipeline
+  lab_name: extraction_lab
+  use_extraction_prompt: false
+  use_few_shots: true

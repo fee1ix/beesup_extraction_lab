@@ -1,0 +1,12 @@
+id: 1
+label: beede_llm_dataset
+lab_name: extraction_lab
+class_parts:
+- Datahandle
+module_path: labtools.datahandle
+data_df:
+  type: DataFrame
+  filename: data_df.pkl
+  n_rows: 170
+  columns: report_passage, report_scheme, gold_completion, source, is_real, split
+  overwrite: false
