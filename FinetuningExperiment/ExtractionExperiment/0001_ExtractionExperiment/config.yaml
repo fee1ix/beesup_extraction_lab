@@ -5,7 +5,7 @@ class_parts:
 - FinetuningExperiment
 - ExtractionExperiment
 module_path: beesup_llm.extraction.extraction_experiment
-done: false
+done: true
 do_eval_base_model: true
 do_eval_lora_model: true
 do_train: true
@@ -26,7 +26,7 @@ sft_config:
   learning_rate: 0.0002
   optim: paged_adamw_8bit
   save_strategy: epoch
-  save_total_limit: 2
+  save_total_limit: 1
   eval_strategy: 'no'
   logging_strategy: steps
   logging_steps: 1
@@ -37,12 +37,15 @@ sft_config:
   max_seq_length: 4096
   packing: false
   seed: 42
-timestamp_start: 2025-03-14_15-26-53
+timestamp_start: 2025-03-17_09-48-44
 lora_info:
   n_trainable_params: 83886080
   n_total_params: 8114147328
   p_trainable_params: 0.010338249554642546
   lora_scale: 0.5303300858899106
+timestamp_train_start: 2025-03-17_09-49-38
+timestamp_train_done: 2025-03-17_09-52-43
+timestamp_done: 2025-03-17_09-52-43
 data_df:
   class_parts:
   - Datahandle
