@@ -18,7 +18,7 @@ lora_config:
   bias: none
   task_type: CAUSAL_L
 sft_config:
-  num_train_epochs: 2
+  num_train_epochs: 10
   output_dir: /home/fboehning/fboehning/extraction_lab/FinetuningExperiment/ExtractionExperiment/0001_ExtractionExperiment
   auto_find_batch_size: true
   per_device_train_batch_size: 8
@@ -37,15 +37,15 @@ sft_config:
   max_seq_length: 4096
   packing: false
   seed: 42
-timestamp_start: 2025-03-17_09-48-44
+timestamp_start: 2025-03-17_15-19-11
 lora_info:
   n_trainable_params: 83886080
   n_total_params: 8114147328
   p_trainable_params: 0.010338249554642546
   lora_scale: 0.5303300858899106
-timestamp_train_start: 2025-03-17_09-49-38
-timestamp_train_done: 2025-03-17_09-52-43
-timestamp_done: 2025-03-17_09-52-43
+timestamp_train_start: 2025-03-17_15-30-20
+timestamp_train_done: 2025-03-17_20-16-47
+timestamp_done: 2025-03-17_20-16-47
 data_df:
   class_parts:
   - Datahandle
